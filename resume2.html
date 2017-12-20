@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>resume</title>
+    <style media="screen">
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Microsoft JhengHei";
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        header {
+            height: 150px;
+            padding: 1em;
+        }
+
+        footer {
+            background-color: yellow;
+            min-height: 50px;
+        }
+
+        .person-info {
+            float: left;
+        }
+
+        .person-contact {
+            float: right;
+            margin-top: 2em;
+        }
+
+        .line {
+            background-color: #666;
+            width: 1px;
+            min-height: 100%;
+            float: right;
+            margin-right: 1em;
+        }
+
+        section {
+            clear: left;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            min-height: 200px;
+            padding: 10px;
+        }
+
+        .person-contact label {
+            display: inline-block;
+            width: 5em;
+            text-align: right;
+            margin-bottom: .3em;
+        }
+
+        .person-info h1 {
+            font-size: 3em;
+            margin-bottom: .2em;
+        }
+
+        .person-info span {
+            font-size: 1.5em;
+            color: #666;
+        }
+
+        h2 {
+            position: relative;
+        }
+
+         h2 hr{
+            position: absolute;
+            left: 4.4em;
+            top: 50%;
+            width: -webkit-calc(100% - 4.8em);
+            border-top: 1px solid #555555;
+        }
+         h3{
+             margin-top:1em;
+         }
+        .gray{
+            color: gray;
+            margin-top:.3em;
+            margin-bottom:.3em;
+        }
+        .content{
+            margin-left: 2em;
+            position: relative;
+        }
+        .content p,li{
+            font-weight:700;
+        }
+        .content ul{
+            margin-top: .5em;
+            margin-left: 1em;
+        }
+        .item{
+            padding:1em 2.5em;
+        }
+        .item .content {
+            margin-left:56%;
+        }
+        .content P:nth-of-type(1){
+            display: inline-block;
+        }
+        .flow{
+            position: absolute;
+            right:15%;
+            top:0em;
+            color:gray;
+        }
+        img{
+            width:100px;
+            border-color:red;
+            border-width:2px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+        img:hover{
+            border-color: #000;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="person-info">
+        <h1>张小明</h1>
+        <span>Web 前端开发</span>
+    </div>
+    <div class="person-contact">
+        <label for="">地址：</label><span>湖南 长沙</span><br>
+        <label for="">手机号：</label><span><a href="tel:18622222222">186 2222 2222</a></span><br>
+        <label for="">电子邮件：</label><span><a href="mailto:zhang@qq.com">zhang@qq.com</a></span><br>
+        <label for="">github：</label><span><a href="https://github.com">github.com/zhang</a></span>
+    </div>
+    <div class="line"></div>
+</header>
+<img src="dlc_generic_header.png" alt="星星">
+<section >
+    <h2>工作经历
+        <hr>
+    </h2>
+    <div class="content">
+        <h3>时尚助理编辑(实习)</h3>
+        <h4 class="flow">2016.03至今</h4>
+        <h3 class="gray">女神进化论</h3>
+        <p>负责微信公众号，女神进化论时装板块内容运营。2016年至今共发布了5篇文章，每篇文章平均转发量达到280+.</p>
+        <ul>
+            <li><p>追踪热点及挖掘读者需求，制定选题提案，参与选题决策。</p></li>
+            <li><p>独立采编及撰文，插图设计及撰制作，参与排版。</p></li>
+            <li><p>通过数据统计及意见反馈收集优化主题及内容选购。</p></li>
+        </ul>
+    </div>
+
+
+</section>
+<section  class="pro-skill">
+    <h2>专业技能
+        <hr>
+    </h2>
+    <div class="item">
+        <h3 class="gray">内容运营</h3>
+        <div class="content">
+            <ul>
+                <li>能够独立完成时尚类内容选题</li>
+                <li>有较高的文章观点原创性和个人风格</li>
+                <li>可协调安排，监督执行照片拍摄工作</li>
+            </ul>
+        </div>
+    </div>
+    <div class="item">
+        <h3 class="gray">服装设计</h3>
+        <div  class="content">
+            <ul>
+                <li>根据设计与市场的发展，提取设计理念</li>
+                <li>分析趋势，色彩和面料的发展</li>
+                <li>能够独立完成从创意到最终产品的设计</li>
+            </ul>
+        </div>
+    </div>
+    <div class="item">
+        <h3 class="gray">平面设计</h3>
+        <div  class="content">
+            <ul>
+                <li>了解并能够初步应用栅格系统进行版页面设计和排版</li>
+                <li>熟练使用PSAI等设计软件</li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+<section >
+    <h2>教育背景
+        <hr>
+    </h2>
+    <div class="content">
+        <h3>服装设计</h3>
+        <h4 class="flow">2016.03至今</h4>
+        <h3 class="gray">边远圣牛丁艺术与设计学院</h3>
+        <h3 class="gray">GPA3.89</h3>
+        <p>创建个人独立品牌xxx，获xxx服装设计奖</p>
+    </div>
+</section>
+</body>
+</html>
