@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .demo{
+            /*首字母大写*/
+            /*text-transform:capitalize;*/
+            /*全部大写*/
+            /*text-transform:uppercase;*/
+            letter-spacing:1em;
+            word-spacing:2em;
+            /*字体为瘦体*/
+            font-weight:lighter;
+        }
+        .demo::first-letter{
+            font-size:2em;
+            color: red;
+            line-height:2em;
+        }
+    </style>
+</head>
+<body>
+<div style="width: 500px;height: 600px;border: 1px solid #ccc; margin: 0 auto;">
+
+    <pre>&quot;</pre>&quot;<br>
+    <pre>&apos;</pre>&apos;<br>
+    <pre>&amp</pre>&amp;<br>
+    <pre>&lt;</pre>&lt;<br>
+    <p class="demo">this is a p</p>
+    <p class="demo">this is a p</p>
+    <p class="demo">this is a p</p>
+</div>
+</body>
+</html>
