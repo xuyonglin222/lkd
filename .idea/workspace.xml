@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a95ed395-4122-4be1-a630-36eb8e9c8e11" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1228/nav1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1228/nav2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1228/table1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="a95ed395-4122-4be1-a630-36eb8e9c8e11" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -141,7 +136,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.customizations" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/github/NODE" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -207,12 +202,12 @@
       <workItem from="1513865643611" duration="148000" />
       <workItem from="1514440572602" duration="7477000" />
       <workItem from="1514472108144" duration="883000" />
-      <workItem from="1514542068171" duration="637000" />
+      <workItem from="1514542068171" duration="766000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44386000" />
+    <option name="totallyTimeSpent" value="44515000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
