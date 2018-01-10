@@ -7,7 +7,12 @@ function zi(str){
  var num = ['零','壹','贰','叁','肆','伍','陆','柒','捌','玖'];
  var result = '';
  for(var i = 0;i < str.length;i++){
-   result =result + num[str.charAt(i)] + idxs[len - i];
+   if(str.charAt(i) =='0'){
+
+   }
+   result =result + num[str.charAt(i)];
+
+   result += idxs[len - i];
  }
  console.log(result);
 }
