@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input{
+            padding:2px 4px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <input type="button" class="btn" value = 'A'>
+    <input type="button" class="btn"  value = 'B'>
+    <input type="button" class="btn"  value = 'C'>
+    <input type="button" class="btn"  value = 'D'>
+    <input type="button" id="clear" value = 'clear'>
+    <div id="show"></div>
+    <script>
+        let btns = document.getElementsByClassName('btn');
+        let div =document.getElementById('show');
+        let cle = document.querySelector('#clear');
+        for(let i=0;i<btns.length;i++){
+                btns[i].onclick=function(){
+                    div.innerText = this.value;
+                }
+        }
+        cle.addEventListener('click',function(e){
+            console.log(e.target);
+            div.innerText = ' '
+        })
+    </script>
+</div>
+</body>
+</html>

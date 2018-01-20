@@ -1,0 +1,23 @@
+<script type="text/javascript">
+  class Person{
+    constructor(name){
+      this.name = name;
+    }
+    sayHello(msg){
+      return this.name +" "+msg;
+    }
+  }
+  var p1 =new Person('Bob');
+console.log(p1.sayHello('ES6'));
+class Staff extends Person{
+  constructor(name,work){
+    super(name);
+    this.work = work;
+  }
+  toString(s){
+    return `name=${this.name},work=${this.work}`;
+  }
+}
+var p2 =new Staff('alice','student');
+console.log(p2.toString());
+</script>
