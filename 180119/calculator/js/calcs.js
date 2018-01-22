@@ -1,6 +1,6 @@
 class Calc {
   constructor() {
-    //存储后缀表达式的数组
+    //存储后缀表达式的队列
     this.data = [];
     //存储运算符的栈
     this.Stack = [];
@@ -90,7 +90,7 @@ class Calc {
       let x = this.data.shift();
       let num = parseFloat(x); //num 可能是NaN或者数字
       //NaN != NaN
-      if (!isNaN(num)) {
+      if (!Number.isNaN(num)) {
         this.resStack.push(num);
       } else {
         let num1 = this.resStack.pop();
@@ -114,7 +114,7 @@ class Calc {
     }
     this.sc.value = this.resStack.pop();
     this.data.push(' '+result);
-    this.figure +=result; 
+    this.figure +=result;
   }
   init() {
     let _this = this;

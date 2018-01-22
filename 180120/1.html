@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        button {
+            padding: 2px 5px;
+        }
+        .menu-title ol{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<button id="btn">显示/隐藏</button>
+<ul>
+    <li>菜单--</li>
+    <li>菜单--</li>
+    <li>菜单--</li>
+    <li>菜单--</li>
+</ul>
+<ul id="menu">
+    <li class="menu-title">C语言1
+        <ol>
+            <li>C/C++</li>
+            <li>C/C++</li>
+            <li>C/C++</li>
+        </ol>
+    </li>
+    <li class="menu-title">C语言2
+        <ol>
+            <li>C/C++</li>
+            <li>C/C++</li>
+            <li>C/C++</li>
+        </ol>
+        <!--啦啦啦啦-->
+
+    </li>
+    <li class="menu-title">C语言3
+        <ol>
+            <li>C/C++</li>
+            <li>C/C++</li>
+            <li>C/C++</li>
+        </ol>
+    </li>
+</ul>
+<script>
+    let title = document.querySelectorAll('.menu-title');
+    title.forEach(function (item, index) {
+        item.addEventListener('click', function () {
+            console.log(title[1].childNodes)
+
+            let ol = this.querySelector('ol');
+            let display = ol.style.display;
+            console.log(display)
+            ol.style.display=(display==='block')?'none':'block';
+
+        })
+    })
+</script>
+</body>
+</html>
